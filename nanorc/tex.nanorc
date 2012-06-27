@@ -1,0 +1,9 @@
+syntax "LaTeX"      "\.tex"
+color cyan          "\\documentclass|\\begin|\\end"
+color brightred     "\\usepackage"
+color magenta       "\\author|\\title|\\date|\\maketitle"
+color brightblack   "\\and"
+color brightgreen   "%.*"
+color brightblue    "\<(abstract|article|letter|book|report|document)\>"
+color brightcyan      start="\\section|\\subsection|\\subsubsection" end="\}"
+

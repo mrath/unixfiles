@@ -1,0 +1,10 @@
+syntax "xml" "\.([jrs]html?|sgml?|xml|opml|xslt?)$"
+header "<\?xml"
+
+color brightwhite  start="<" end=">"
+KEYWORD:  " [a-z_-]+="
+STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
+ESCAPE:   "&[^;]*;"
+COMMENT:  start="<!--" end="-->"
+COMMENT:  start="<!DOCTYPE" end=">"
++LINT

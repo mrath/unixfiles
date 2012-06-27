@@ -1,0 +1,10 @@
+syntax "launch-file" "\.(launch)$"
+
+color brightwhite  start="<" end=">"
+color green  " [a-z_-]+="
+color yellow   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
+color magenta   "&[^;]*;"
+color cyan  start="<!--" end="-->"
+color cyan  start="<!DOCTYPE" end=">"
+color ,green "[[:space:]]+$"
+color ,red "	*"

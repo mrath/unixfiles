@@ -1,0 +1,26 @@
+syntax "yaml" "\.yaml$"
+header "^---"
+
+# Type
+color brightgreen "(^| )!!(bool|float|int|map|null|seq|str) "
+
+# Operator
+color red "[:{}]" "\[" "\]"
+color red ":[[:space:]]+[|>]"
+color red "^[[:space:]]*- "
+
+# Document delimeter
+color brightmagenta "^---" "^\.\.\."
+
+# Anchor
+color brightyellow "&[A-Za-z0-9]+"
+
+# Reference
+color brightyellow "\*[A-Za-z0-9]+"
+
+# String
+color yellow " "(\\.|[^"])*"$" " '(\\.|[^'])*'$"
+
+# Comment
+color cyan "(^|[[:space:]])#.*$"
+
