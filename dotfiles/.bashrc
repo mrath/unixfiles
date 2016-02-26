@@ -50,7 +50,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[33m\]\u@\h\[\033[00m\]:\[\033[01;33m\]\W\[\033[00m\]\\$ '
+    PS1='\[\033[01;33m\]\W\[\033[00m\]\\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '
     PS2="> "
@@ -104,4 +104,4 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 source ~/setup.sh
-export EDITOR='nano'
+
